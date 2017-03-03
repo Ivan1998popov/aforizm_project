@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ru.inostudio.aforizm">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
+        <activity android:name=".activity.activity.activities.Enter_password">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.activity.activities.StartActivity" />
+        <activity android:name=".activity.activity.activities.CategoryAphorisms" />
+        <activity android:name=".activity.activity.activities.Settings" />
+        <activity android:name=".activity.activity.activities.AlarmActivity" />
+        <activity android:name=".activity.activity.activities.ColorActivity" />
+        <activity android:name=".activity.activity.activities.Password" />
+        <activity android:name=".activity.activity.activities.List_Aphorisms" />
+
+        <receiver
+            android:name=".activity.activity.adapter.AlarmReciever"
+            android:process=":remote" />
+
+        <activity
+            android:name=".activity.activity.activities.My"
+            android:label="@string/title_activity_my" />
+        <activity android:name=".activity.activity.activities.Aphorism" />
+        <activity android:name=".activity.activity.activities.My_style_list"></activity>
+    </application>
+
+</manifest>

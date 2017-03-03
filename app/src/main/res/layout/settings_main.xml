@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_main3">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Настройки"
+        android:textSize="45dp"
+        android:id="@+id/settings"
+        android:textColor="#000000"
+        android:gravity="center" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView3" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/relativeLayout"
+                android:paddingTop="10dp"
+                android:background="#eebeb7b7"
+                android:paddingBottom="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Не беспокоить"
+                    android:id="@+id/textView2"
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginRight="40dp" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/switch1"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Выбор мелодии"
+                android:textSize="15dp"
+                android:id="@+id/music"
+                android:layout_below="@+id/relativeLayout"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:allowUndo="false" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Установка фона приложения"
+                android:textSize="15dp"
+                android:id="@+id/background"
+                android:layout_below="@+id/text3"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Дополнительные функции"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:id="@+id/text3"
+                android:gravity="center"
+                android:layout_below="@+id/music"
+                android:layout_alignParentLeft="true" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Установка пароля для приложения"
+                android:id="@+id/password"
+                android:layout_below="@+id/background"
+                android:layout_alignParentLeft="true" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_main2">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="45dp"
+        android:text="Категории"
+        android:id="@+id/text"
+        android:textColor="#000000"
+        android:gravity="center" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView2" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="392dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="О жизни"
+                android:id="@+id/life"
+                android:gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="О друзьях"
+                android:id="@+id/friends"
+                android:layout_below="@+id/life"
+                android:layout_alignRight="@+id/motivation"
+                android:layout_alignEnd="@+id/motivation"
+                android:layout_alignLeft="@+id/peoples"
+                android:layout_alignStart="@+id/peoples" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="О людях"
+                android:id="@+id/peoples"
+                android:layout_below="@+id/friends"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Смешные"
+                android:id="@+id/funny"
+                android:layout_below="@+id/peoples"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Мотивирующие"
+                android:id="@+id/motivation"
+                android:layout_below="@+id/funny"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="О любви"
+                android:id="@+id/love"
+                android:layout_below="@+id/motivation"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>
